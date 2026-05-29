@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surat</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+        }
+
+        .scroll-box {
+            width: 250px;
+            height: 300px;
+            overflow-y: auto;             background: white;
+            padding: 10px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: #eee;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .scroll-box::-webkit-scrollbar {
+            width: 5px;
+        }
+        .scroll-box::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+        
+        #cikon {
+            position: fixed;
+            width: 400px;
+        }
+        
+        #su {
+            position: fixed;
+            top: 50px;
+        }
+        
+            #home {
+    position: fixed;
+    width: 50px;
+    top: 0px;
+    left: -2px;
+  }
+    </style>
+</head>
+<header>
+    <h1 id="su">Surat</h1>
+</header>
+<body>
+    <img src="home.jpg" id="home"onclick="home()"/>
+<img src="cikon.jpg" id="cikon" hidden/>
+<audio src="fnaf-foxy-scream-sfx.mp3" id="foxy"></audio>
+    <div class="scroll-box">
+        <button class="btn" id="y">khanza</button>
+        <button class="btn" id="j">jojo</button>
+        <button class="btn" id="a">abi</button>
+        <button class="btn" id="b">zia</button>
+        <button class="btn" id="bu">faqih</button>
+    </div>
+<script>
+let count = 0;
+
+function cekCount() {
+    if (count == 5) {
+        alert("Faqih memberikan mu sebuah kado, pencet tombol home diatas untuk lihat kado");
+    }
+}
+
+y.onclick = function() {
+    alert("Khanza: happy birthday sher")
+    count += 1;
+    cekCount();
+}
+
+a.onclick = function() {
+    alert("abi: hbd")
+    count += 1;
+    cekCount();
+}
+
+j.onclick = function() {
+    alert("jojo: happy")
+    count += 1;
+    cekCount();
+}
+
+b.onclick = function() {
+    alert("zia: shyern macho")
+    count += 1;
+    
+    cekCount();
+}
+
+bu.onclick = function() {
+    alert("faqih: seburuk apapun perlakuan orang lain kepada mu, jangan pernah jadi orang jahat untuk membalas -dari tiktok")
+    count += 1;
+    cekCount();
+}
+
+function home(){
+    window.location.href = "fak.html";
+}
+</script>
+</body>
+</html>
+
